@@ -4,14 +4,10 @@ import { Button, Space, Divider } from 'antd';
 import "./EventCard.scss"
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-
-=======
 import logo from "../../assets/logo.png"
 import Spinner from '../spinner/Spinner';
->>>>>>> develop
 const imagePath = "http://localhost:8080/images/event/"
-
+const { Meta } = Card;
 
 const EventCard = () => {
 
@@ -37,8 +33,8 @@ return (
         cover={event.image ? <img alt="evento" src={imagePath + event.image}/> : <></>}
           >
         <div>
-        <h2 className='title'>{event.title}</h2>
-        <p className="card-text-event text ">{event.description}</p>
+        <h2>{event.title}</h2>
+        <p className="card-text-event">{event.description}</p>
         </div>
 
         <Space wrap className='center-button-div'> 
