@@ -4,7 +4,12 @@ import { Button, Space, Divider } from 'antd';
 import "./EventCard.scss"
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 
+=======
+import logo from "../../assets/logo.png"
+import Spinner from '../spinner/Spinner';
+>>>>>>> develop
 const imagePath = "http://localhost:8080/images/event/"
 
 
@@ -13,13 +18,13 @@ const EventCard = () => {
 const {events} = useSelector((state) => state.events)
 
 useEffect(()=> {
-
+  
 }, [events])
 
 
+
 if(events?.length <= 0){
-    console.log("no events")
-    return "No hay contenido en este momento"
+    return <Spinner/>
   }
 
 return (

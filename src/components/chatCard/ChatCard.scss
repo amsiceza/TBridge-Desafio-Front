@@ -1,0 +1,67 @@
+@import "../../colors.scss";
+
+
+.chatcontacts-card {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2% 2%;
+    background-color: $beige;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contact-img-container {
+    width: 75px;
+    height: 75px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+    }
+  }
+
+  .contact-details {
+    width: 50%;
+    color: $soft-brown;
+
+    p {
+        text-decoration: none;
+        text-align: left;
+        font-family: "Spectral", serif;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+       
+          
+    }
+
+    .last-msg {
+      font-family:'Atkinson Hyperlegible', sans-serif;
+      font-size: 12px;
+      padding-bottom: 2px;
+
+      span {
+        font-weight: bold;
+
+      }
+    }
+  }
+
+  .last-msg-time {
+    font-size: 9px;
+
+  }
+
+  .contact-right {
+    font-size: x-large;
+    color: $accent;
+    margin: auto 0;
+
+  }
+
+
+ 

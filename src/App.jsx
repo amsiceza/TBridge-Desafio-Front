@@ -18,6 +18,7 @@ import Enterprises from './pages/enterprises/Enterprises';
 import PrivateZone from './guards/PrivateZone';
 import PageNotFound from './components/pageNotFound/PageNotFound';
 
+import ChatInstant from './pages/chat/ChatInstant';
 
 
 
@@ -36,11 +37,11 @@ function App() {
         <Routes>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-
+          <Route path="/chat/instant/:id" element={<ChatInstant />} />
           <Route path="/" element={<PrivateZone><Home /></PrivateZone>}></Route>
           <Route path="/community" element={<PrivateZone><Community /></PrivateZone>} />
           <Route path="/userDetails/:id" element={<PrivateZone><UserDetails /></PrivateZone>} />
-          <Route path="/chat/:id" element={<PrivateZone><Chat /></PrivateZone>} />
+          <Route path="/chat" element={<PrivateZone><Chat /></PrivateZone>} />
           <Route path="/userProfile/:id" element={<PrivateZone><UserProfile /></PrivateZone>} />
           <Route path="/events/:id" element={<PrivateZone><EventOne /></PrivateZone>} />
           <Route path="/navBar" element={<PrivateZone><NavBar /></PrivateZone>} />
